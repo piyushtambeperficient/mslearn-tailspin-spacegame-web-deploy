@@ -49,7 +49,7 @@ namespace UITests
                 }
 
                 // Wait until the page is fully loaded on every page navigation or page reload.
-                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(50);
 
                 // Navigate to the site.
                 // The site name is stored in the SITE_URL environment variable to make 
@@ -121,7 +121,7 @@ namespace UITests
             Assert.That(modalWasDisplayed, Is.True);
         }
 
-        private IWebElement FindElement(By locator, IWebElement parent = null, int timeoutSeconds = 10)
+        private IWebElement FindElement(By locator, IWebElement parent = null, int timeoutSeconds = 50)
         {
             // WebDriverWait enables us to wait for the specified condition to be true
             // within a given time period.

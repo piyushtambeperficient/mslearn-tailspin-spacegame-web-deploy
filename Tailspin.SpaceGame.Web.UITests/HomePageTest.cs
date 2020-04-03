@@ -1,3 +1,23 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@piyushtambeperficient 
+MicrosoftDocs
+/
+mslearn-tailspin-spacegame-web-deploy
+12
+11.2k
+ Code Issues 0 Pull requests 10 Actions Projects 0 Wiki Security Insights
+mslearn-tailspin-spacegame-web-deploy/Tailspin.SpaceGame.Web.UITests/HomePageTest.cs
+@tpetchel tpetchel Use ID instead of XPath
+a4979aa on Jan 24
+156 lines (138 sloc)  5.78 KB
+  
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -49,7 +69,7 @@ namespace UITests
                 }
 
                 // Wait until the page is fully loaded on every page navigation or page reload.
-                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(50);
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
 
                 // Navigate to the site.
                 // The site name is stored in the SITE_URL environment variable to make 
@@ -121,7 +141,7 @@ namespace UITests
             Assert.That(modalWasDisplayed, Is.True);
         }
 
-        private IWebElement FindElement(By locator, IWebElement parent = null, int timeoutSeconds = 50)
+        private IWebElement FindElement(By locator, IWebElement parent = null, int timeoutSeconds = 10)
         {
             // WebDriverWait enables us to wait for the specified condition to be true
             // within a given time period.
@@ -154,3 +174,15 @@ namespace UITests
         }
     }
 }
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

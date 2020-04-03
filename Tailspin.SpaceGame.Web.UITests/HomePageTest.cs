@@ -1,23 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@piyushtambeperficient 
-MicrosoftDocs
-/
-mslearn-tailspin-spacegame-web-deploy
-12
-11.2k
- Code Issues 0 Pull requests 10 Actions Projects 0 Wiki Security Insights
-mslearn-tailspin-spacegame-web-deploy/Tailspin.SpaceGame.Web.UITests/HomePageTest.cs
-@tpetchel tpetchel Use ID instead of XPath
-a4979aa on Jan 24
-156 lines (138 sloc)  5.78 KB
-  
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -174,15 +154,3 @@ namespace UITests
         }
     }
 }
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
